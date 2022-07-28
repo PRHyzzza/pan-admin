@@ -31,5 +31,5 @@ export default defineConfig({
     }),
     Unocss()
   ],
-  base: '/adm/',
+  base: '/pan-admin/',
 })
