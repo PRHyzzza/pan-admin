@@ -2,7 +2,7 @@
 defineProps({
   size: {
     type: Number,
-    default: 32,
+    default: 24,
   },
   icon: {
     type: String,

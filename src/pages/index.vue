@@ -53,8 +53,8 @@ const routes = ref([
         </el-scrollbar>
       </el-aside>
       <el-container>
-        <el-header bg-blue flex flex-row gap-4px items-center>
-          <PanIcon :icon="isCollapse ? 'Expand' : 'Fold'" @click="isCollapse = !isCollapse" />
+        <el-header flex flex-row items-center>
+          <PanIcon cursor-pointer :icon="isCollapse ? 'Expand' : 'Fold'" @click="isCollapse = !isCollapse" />
         </el-header>
         <el-main bg-green>Main</el-main>
       </el-container>
