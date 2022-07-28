@@ -30,8 +30,5 @@ export default defineConfig({
       dts: 'src/components.d.ts',
     }),
     Unocss()
-  ],
-  build: {
-    outDir: 'adm', // 默认是 'dist'  
-  }
+  ]
 })
