@@ -31,5 +31,7 @@ export default defineConfig({
     }),
     Unocss()
   ],
-  base: './',
+  build: {
+    outDir: 'adm', // 默认是 'dist'  
+  }
 })
