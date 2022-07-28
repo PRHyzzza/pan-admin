@@ -24,10 +24,7 @@ defineProps({
         <PanIcon :icon="item.icon" v-if="item.icon" />
         <span>{{ item.name }}</span>
       </template>
-      <el-menu-item :index="childrenItem.path" v-for="childrenItem in item.children" :key="childrenItem.name">
-        <PanIcon :icon="item.icon" v-if="item.icon" />
-        <template #title>{{ childrenItem.name }}</template>
-      </el-menu-item>
+      <PanMenuItem :routes="item.children" />
     </el-sub-menu>
   </template>
 </template>

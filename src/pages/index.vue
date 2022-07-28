@@ -34,6 +34,18 @@ const routes = ref([
         name: 'three-two',
         path: '/three/two',
         icon: 'setting',
+        children: [
+          {
+            name: 'three-two-one',
+            path: '/three/two/one',
+            icon: 'document',
+          },
+          {
+            name: 'three-two-two',
+            path: '/three/two/two',
+            icon: 'setting',
+          },
+        ],
       },
     ]
   },
