@@ -30,5 +30,6 @@ export default defineConfig({
       dts: 'src/components.d.ts',
     }),
     Unocss()
-  ]
+  ],
+  base: '/adm/',
 })
