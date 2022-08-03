@@ -65,8 +65,23 @@ const routes = ref([
         </el-scrollbar>
       </el-aside>
       <el-container>
-        <el-header flex flex-row items-center>
+        <el-header flex flex-row items-center justify-between>
           <PanIcon cursor-pointer :icon="isCollapse ? 'Expand' : 'Fold'" @click="isCollapse = !isCollapse" />
+          <el-dropdown trigger="click">
+            <span flex flex-row items-center gap-8px>
+              <el-avatar shape="square" :size="24">user</el-avatar>
+              <span>用户名</span>
+            </span>
+            <template #dropdown>
+              <el-dropdown-menu>
+                <el-dropdown-item>Action 1</el-dropdown-item>
+                <el-dropdown-item>Action 2</el-dropdown-item>
+                <el-dropdown-item>Action 3</el-dropdown-item>
+                <el-dropdown-item disabled>Action 4</el-dropdown-item>
+                <el-dropdown-item divided>Action 5</el-dropdown-item>
+              </el-dropdown-menu>
+            </template>
+          </el-dropdown>
         </el-header>
         <el-main bg-green>Main</el-main>
       </el-container>
