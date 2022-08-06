@@ -6,7 +6,11 @@ const routes: RouteRecordRaw[] = [
     path: '/',
     name: 'index',
     component: () => import('../pages/index.vue'),
-
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('../pages/login/login.vue'),
   },
   {
     path: '/:pathMatch(.*)',
@@ -15,7 +19,7 @@ const routes: RouteRecordRaw[] = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/adm/'),
+  history: createWebHistory(),
   routes,
 })
 
